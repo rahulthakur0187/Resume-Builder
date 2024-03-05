@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume builder</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+</head>
+
+<body>
+    <!-- this is resume form  in left side-->
+    <div class="container0" id="resume-form">
+        <div class="title">
+            <h1>Resume Builder</h1>
+            <p>by Rahul</p>
+        </div>
+        <div class="container1">
+            <form action="">
+                <h3>Personal Information</h3>
+
+                <label for="name">Name:</label>
+                <div>
+                    <input type="text" placeholder="enter your name" id="name">
+                </div>
+
+                <label for="email">Email:</label>
+                <div>
+                    <input type="email" placeholder="enter your email" id="email">
+                </div>
+
+                <label for="">Mobile no:</label>
+                <div>
+                    <input type="number" placeholder="enter your number" id="number">
+                </div>
+
+
+                <label for="address">Your Address:</label>
+                <div>
+                    <textarea name="" id="address" class="space" cols="20" rows="2"></textarea>
+                </div>
+
+                <label for="">Select your Image</label>
+                <div>
+                    <input type="file" class="image" id="yourimage">
+                </div>
+
+                <label for="education">Education:</label>
+                <div class="addnewedu">
+                    <textarea name=""  class="education" cols="30" rows="2"></textarea>
+                    <button class="add" onclick="addEdu(); return false;">Add more</button>
+                </div>
+
+                <label for="linkedin">Linkedin:</label>
+                <div>
+                    <input type="url" placeholder="enter you linkedin link" id="linkedin">
+                </div>
+            </form>
+
+        </div>
+
+<!-- this is also resume form but in right side -->
+        <div class="container2">
+            <h3>Professional Information</h3>
+
+            <label for="objective">Objective:</label>
+            <div>
+                <textarea name="" id="objective" cols="30" rows="2"></textarea>
+            </div>
+
+            <label for="skills">Skills:</label>
+            <div id="newskilladd">
+                <input type="text" class="skills">
+                <button onclick="addskills()" class="add">Add more</button>
+            </div>
+
+            <label for="experience" class="exp">Experience:</label>
+            <div id="addnewexp">
+                <textarea name="" class="experience" id="experience" cols="30" rows="2"></textarea>
+                <button class="add" onclick="addexp()">Add more</button>
+            </div>
+
+
+            <div class="container3">
+                <button class="generatebtn" onclick="generateCV()">Generate CV</button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- +++++++++++++++Resume Template , I have also used bootstrap in this for Styling and responsive purpose+++++++++++++++++++++++++++ -->
+    
+
+        <div class="container" id="resume-template">
+            <div class="row ">
+                <div class=" col-md-4 text-center my-3 py-5 background">
+                    <!-- first column -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Default_pfp.svg" alt="img"
+                        class="myimg"
+                        id="imgtemp">
+
+                    <div class="container5">
+                        <p id="namet1">Rahul Thakur</p>
+                        <p id="numbert">7018136453</p>
+                        <p id="emailt">rahulthakurrd0187@gmail.com</p>
+                        <p id="addresst">vpo dhrampur district mandi hp 175030</p>
+                        <p id="linkedint"><a href="http://www.linkedin.com"
+                                style="color: white;">http://www.linkedin.com</a></p>
+                    </div>
+                </div>
+                <div class=" col-md-8 py-4 ">
+                    <!-- second column -->
+                    <h1 class="text-center" style="font-weight: 600;" id="namet2">Rahul Thakur</h1>
+
+                    <!-- objective card -->
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h4>Objective</h4>
+                        </div>
+                        <div class="card-body" id="objectivet">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus itaque velit
+                                asperiores
+                                corrupti omnis eveniet tempore est ab sapiente natus. Debitis dolore rerum excepturi
+                                minima
+                                sint odio, ex maiores aut!</p>
+                        </div>
+                    </div>
+
+                    <!-- skills -->
+
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <h4>Skills</h4>
+                        </div>
+                        <div class="card-body  " id="skillst">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>BootStrap</li>
+                                <li>React</li>
+                                <li>GitHub</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- work experience -->
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <h4>Work Experience</h4>
+                        </div>
+                        <div class="card-body" id="experiencet">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non?</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- education -->
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <h4>Education</h4>
+                        </div>
+                        <div class="card-body" id="educationt">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non?</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container mt-3 text-center">
+                        <button class="btn" id="downloadbtn" onclick="downloadCV()">Download Resume</button>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <script src="resume.js"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

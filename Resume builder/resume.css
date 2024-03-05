@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* #resume-form{
+    display: none;
+} */
+
+#resume-template{
+    display: none;
+}
+
+
+.title{
+    display: grid;
+    place-items: center;
+}
+
+.container1{
+    /* margin: 10px;
+    padding: 10px; */
+    width: 48%;
+    margin-inline: 50px;  
+ 
+}
+h3{
+    margin-inline: 100px;
+    /* margin-block: 10px; */
+    
+}
+#name{
+    margin-block: 5px;
+    width: 70%;
+    padding: 5px;
+   
+}
+#email{
+    margin-block: 5px;
+    padding: 5px;
+    width: 70%;
+  
+}
+#number{
+    margin-block: 5px;
+    width: 70%;
+    padding: 5px;
+    
+}
+#address{
+    margin-block: 5px;
+    padding: 5px;
+    width: 70%; 
+}
+
+.image{
+    margin-block: 5px;
+    padding: 5px;
+    width: 70%; 
+}
+.education{
+    margin-block: 5px;
+    width: 70%;
+    padding: 5px;
+  
+}
+
+#linkedin{
+    margin-block: 5px;
+    width: 70%;
+    padding: 5px;
+}
+
+    
+
+.container2{
+   position: absolute;
+   top:0;
+   right:0;
+   width: 48%;
+   margin: 65px; 
+  
+}
+.container2 h3{
+    margin-inline: 100px;
+    /* margin-block: 7px; */ /* this is for css by me not bootstrap */
+    margin-block: 15px; 
+   padding: 10px;
+
+   
+}
+#objective{
+    /* margin-block: 5px; */
+    width: 80%;
+    padding: 5px;
+}
+.skills{
+    margin-block: 5px;
+    width: 80%;
+    padding: 5px;
+   
+}
+.add{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    color: rgb(10, 119, 10);
+    font-size: large;
+    cursor: pointer;
+}
+.experience{
+    margin-block: 5px;
+    width: 80%;
+    padding: 5px;
+}
+
+
+.container3{
+    display: grid;
+    place-items: left;
+    margin-block: 90px;
+  
+
+}
+
+.generatebtn{
+    margin-block: 220px;
+    padding: 10px;
+    background-color: rgb(11, 11, 226);
+    color: white;
+    font-weight: 600;
+    width: 20%;
+   
+    
+}
+
+/* +++++++++++++++++++++++++++++resume-template+++++++++++++++++++++++++++++++ */
+
+
+
+.container5{
+    color:rgb(218, 233, 233);
+    margin: 20px;
+    
+}
+#namet2{
+    color: rgb(24, 131, 131);
+}
+
+.myimg{
+    width:80%;
+    height: 40vh;
+    border-radius: 50%;
+}
+.background{
+    background-color: rgb(24, 131, 131);
+}
+
+#downloadbtn{
+    padding: 10px;
+    background-color: rgb(24, 131, 131);
+    margin: 20px;
+    color: rgb(231, 234, 236);
+}
+
+
